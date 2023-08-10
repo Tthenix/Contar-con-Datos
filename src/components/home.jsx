@@ -3,6 +3,7 @@ import {
   Button,
   img
 } from "@material-tailwind/react";
+import DefaultTimeline from "./TimeLine";
 import foto1 from "../img/granizodark.jpg"
 import TableauDashboard from "./TableauDashboard";
 
@@ -21,8 +22,15 @@ const home = () => {
         </div>
       </div>
 
-      
-      <TableauDashboard/>
+
+      <div className="grid md:grid-cols-2 md:gap-4">
+        <div className="flex items-center col-span-2 md:col-span-1">
+          <TableauDashboard />
+        </div>
+        <div className="col-span-2 md:col-span-1">
+          <DefaultTimeline />
+        </div>
+      </div>
     </div>
 
   )
