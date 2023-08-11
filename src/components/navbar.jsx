@@ -12,7 +12,7 @@ import {
 export const NavBar = () => {
 
     return (
-        <nav className="flex justify-between items-center  h-20 bg-transparent relative shadow-sm ">
+        <nav className="flex justify-between items-center pt-3 pb-6 bg-transparent relative shadow-sm ">
             <Link to="/">
                 <div className="flex items-center px-4 md:px-12">
 

@@ -1,34 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './TimeLine.css';
+import Modal from './modal'; // Ajusta la ruta según tu estructura
 
-const Timeline = () => {
+const LineaDeTiempo = () => {
+    const [modalOpen, setModalOpen] = useState(false);
+    const [selectedYear, setSelectedYear] = useState('');
+    const [selectedTitle, setSelectedTitle] = useState('');
+    const [selectedDescription, setSelectedDescription] = useState('');
+
+    const handleIconClick = (year, title, description) => {
+        setSelectedYear(year);
+        setSelectedTitle(title);
+        setSelectedDescription(description);
+        setModalOpen(true);
+    };
+
     return (
-        <div class="container">
-            <div class="main-timeline">
-
-
-                <div class="timeline">
-                    <div class="icon"></div>
-                    <div class="date-content">
-                        <div class="date-outer">
-                            <span class="date">
-                                <span class="month">2 Years</span>
-                                <span class="year">2013</span>
+        <div className="container">
+            <div className="main-timeline">
+                <div className="timeline">
+                    <div className="icon">
+                        {/* Aquí puedes colocar el contenido de tu icono */}
+                        <i className="fas fa-calendar"></i>
+                    </div>
+                    <div className="date-content" onClick={() => handleIconClick('2017', 'Visual Art & Design', 'Descripción del año 2013')}>
+                        <div className="date-outer">
+                            <span className="date">
+                                <span className="month">2017 y 2018</span>
+                                <span className="year">Info </span>
                             </span>
                         </div>
                     </div>
-                    <div class="timeline-content">
-                        <h5 class="title">Visual Art &amp; Design</h5>
-                        <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.
+                    <div className="timeline-content">
+                        <h5 className="title">Años 2017 y 2018</h5>
+                        <p className="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                            efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
+                            volutpat. Aenean interdum finibus efficitur. Praesent dapibus
+                            dolor felis, eu ultrices elit molestie.
                         </p>
                     </div>
                 </div>
 
-
                 <div class="timeline">
                     <div class="icon"></div>
-                    <div class="date-content">
+                    <div class="date-content" onClick={() => handleIconClick('2013', 'Visual Art & Design', 'Descripción del año 2013')}>
                         <div class="date-outer">
                             <span class="date">
                                 <span class="month">1 Years</span>
@@ -46,7 +62,7 @@ const Timeline = () => {
 
                 <div class="timeline">
                     <div class="icon"></div>
-                    <div class="date-content">
+                    <div class="date-content" onClick={() => handleIconClick('2013', 'Visual Art & Design', 'Descripción del año 2013')}>
                         <div class="date-outer">
                             <span class="date">
                                 <span class="month">2 Years</span>
@@ -64,7 +80,7 @@ const Timeline = () => {
 
                 <div class="timeline">
                     <div class="icon"></div>
-                    <div class="date-content">
+                    <div class="date-content" onClick={() => handleIconClick('2013', 'Visual Art & Design', 'Descripción del año 2013')}>
                         <div class="date-outer">
                             <span class="date">
                                 <span class="month">2 Years</span>
@@ -79,11 +95,15 @@ const Timeline = () => {
                         </p>
                     </div>
                 </div>
-
-
             </div>
+            <Modal
+                isOpen={modalOpen}
+                onClose={() => setModalOpen(false)}
+                year={selectedYear}
+                title={selectedTitle}
+                description={selectedDescription}
+            />
         </div>
     );
 };
-
-export default Timeline;
+export default LineaDeTiempo; 

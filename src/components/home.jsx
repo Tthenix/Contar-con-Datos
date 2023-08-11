@@ -1,11 +1,6 @@
 import React from "react";
-import {
-  Button,
-  img
-} from "@material-tailwind/react";
-import DefaultTimeline from "./TimeLine";
 import foto1 from "../img/granizodark.jpg"
-import TableauDashboard from "./TableauDashboard";
+import LineaDeTiempo from "./TimeLine";
 
 const home = () => {
   return (
@@ -21,16 +16,10 @@ const home = () => {
           <p className="text-sm md:text-base text-shadow">  Esta es una pagina que pretende mostrar datos sobre el daño de los granizos en las distintas localidades de la ciudad de Mendoza en un lapso de 5 años. </p>
         </div>
       </div>
-
-
-      <div className="grid md:grid-cols-2 md:gap-4">
-        <div className="flex items-center col-span-2 md:col-span-1">
-          <TableauDashboard />
-        </div>
-        <div className="col-span-2 md:col-span-1">
-          <DefaultTimeline />
-        </div>
+      <div className="flex justify-center items-center pt-0">
+        <LineaDeTiempo />
       </div>
+
     </div>
 
   )
