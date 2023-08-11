@@ -23,7 +23,7 @@ const LineaDeTiempo = () => {
                         {/* Aquí puedes colocar el contenido de tu icono */}
                         <i className="fas fa-calendar"></i>
                     </div>
-                    <div className="date-content" onClick={() => handleIconClick('2017', 'Visual Art & Design', 'Descripción del año 2013')}>
+                    <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('2017', 'Visual Art & Design', 'Descripción del año 2013')}>
                         <div className="date-outer">
                             <span className="date">
                                 <span className="month">2017 y 2018</span>
@@ -44,7 +44,7 @@ const LineaDeTiempo = () => {
 
                 <div class="timeline">
                     <div class="icon"></div>
-                    <div class="date-content" onClick={() => handleIconClick('2013', 'Visual Art & Design', 'Descripción del año 2013')}>
+                    <div class="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('2013', 'Visual Art & Design', 'Descripción del año 2013')}>
                         <div class="date-outer">
                             <span class="date">
                                 <span class="month">1 Years</span>
@@ -62,7 +62,7 @@ const LineaDeTiempo = () => {
 
                 <div class="timeline">
                     <div class="icon"></div>
-                    <div class="date-content" onClick={() => handleIconClick('2013', 'Visual Art & Design', 'Descripción del año 2013')}>
+                    <div class="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('2013', 'Visual Art & Design', 'Descripción del año 2013')}>
                         <div class="date-outer">
                             <span class="date">
                                 <span class="month">2 Years</span>
@@ -80,7 +80,7 @@ const LineaDeTiempo = () => {
 
                 <div class="timeline">
                     <div class="icon"></div>
-                    <div class="date-content" onClick={() => handleIconClick('2013', 'Visual Art & Design', 'Descripción del año 2013')}>
+                    <div class="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('2013', 'Visual Art & Design', 'Descripción del año 2013')}>
                         <div class="date-outer">
                             <span class="date">
                                 <span class="month">2 Years</span>
