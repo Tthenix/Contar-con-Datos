@@ -39,12 +39,11 @@ export const NavBar = () => {
             </div>
 
             <div className="hidden md:flex items-center pr-12 space-x-4">
-                <Link to="main">
+                <a href="http://www.contingencias.mendoza.gov.ar/web1/estadisticas.php#" target="_blank" rel="noopener noreferrer">
                     <Button className="p-4" type="button" color="white">
-
                         Fuentes
                     </Button>
-                </Link>
+                </a>
 
                 <Link to="login">
                     <Button className="p-4" type="button" color="white">
