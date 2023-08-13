@@ -24,7 +24,8 @@ const LineaDeTiempo = () => {
                         {/* Aquí puedes colocar el contenido de tu icono */}
                         <i className="fas fa-calendar"></i>
                     </div>
-                    <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('Daño de granizos a cultivos Mendocinos en el año 2017', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', '.')}>
+                    <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('Daño de granizos a cultivos Mendocinos en el año 2017', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', )}>
+                    
                         <div className="date-outer">
                             <span className="date">
                                 <span className="month">Año</span>
