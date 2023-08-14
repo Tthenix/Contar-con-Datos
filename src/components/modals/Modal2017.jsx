@@ -3,7 +3,7 @@ import { Dialog } from '@headlessui/react';
 import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
-const Modal = ({ isOpen, onClose, year, title, description }) => {
+const Modal2017 = ({ isOpen, onClose, year, title, description }) => {
   return (
     <Dialog open={isOpen} onClose={onClose} className="fixed inset-0 z-10 overflow-y-auto">
       <div className="min-h-screen px-4 text-center">
@@ -23,7 +23,7 @@ const Modal = ({ isOpen, onClose, year, title, description }) => {
           </div>
 
           <div className="mt-4 flex justify-center">
-            <Link to="datos2018">
+            <Link to="datos2017">
               <Button>
                 Mas info
               </Button>
@@ -38,4 +38,4 @@ const Modal = ({ isOpen, onClose, year, title, description }) => {
   );
 };
 
-export default Modal;
+export default Modal2017;
