@@ -1,28 +1,32 @@
 import React, { useState } from 'react';
 import './TimeLine.css';
-import Modal from './modal';
+import Modal from './modal'; // Asegúrate de que estas rutas sean correctas
+import Modal1 from './modal1';
 
 const LineaDeTiempo = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedYear, setSelectedYear] = useState('');
   const [selectedTitle, setSelectedTitle] = useState('');
   const [selectedDescription, setSelectedDescription] = useState('');
+  const [selectedModalType, setSelectedModalType] = useState(null);
 
-  const handleIconClick = (year, title, description) => {
+  const handleIconClick = (year, title, description, modalType) => {
     setSelectedYear(year);
     setSelectedTitle(title);
     setSelectedDescription(description);
+    setSelectedModalType(modalType);
     setModalOpen(true);
   };
+
 
   return (
     <div className="container">
       <div className="main-timeline">
-        <div className="timeline">
+        <div class="timeline">
           <div className="icon">
             <i className="fas fa-calendar"></i>
           </div>
-          <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('Daño de granizos a cultivos Mendocinos en el año 2017', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', '')}>
+          <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('Daño de granizos a cultivos Mendocinos en el año 2017', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA')}>
             <div className="date-outer">
               <span className="date">
                 <span className="month">Año</span>
@@ -111,16 +115,42 @@ const LineaDeTiempo = () => {
         </div>
         
         </div>
+        {selectedModalType === 'Modal' && (
         <Modal
-        isOpen={modalOpen}
-        onClose={() => {
-          setModalOpen(false);
-        }}
-        year={selectedYear}
-        title={selectedTitle}
-        description={selectedDescription}
-      />
-    </div>
+          isOpen={modalOpen}
+          onClose={() => {
+            setModalOpen(false);
+          }}
+          year={selectedYear}
+          title={selectedTitle}
+          description={selectedDescription}
+        />
+      )}
+
+        {selectedModalType === 'Modal' && (
+        <Modal
+          isOpen={modalOpen}
+          onClose={() => {
+            setModalOpen(false);
+          }}
+          year={selectedYear}
+          title={selectedTitle}
+          description={selectedDescription}
+        />
+      )}
+
+        {selectedModalType === 'Modal1' && (
+          <Modal1
+            isOpen={modalOpen}
+            onClose={() => {
+              setModalOpen(false);
+            }}
+            year1={selectedYear}
+            title1={selectedTitle}
+            description1={selectedDescription}
+          />
+        )}
+      </div>
   );
 };
 
