@@ -2,7 +2,7 @@ import React from 'react';
 import { Dialog } from '@headlessui/react';
 import { Button } from "@material-tailwind/react";
 
-const Modal = ({ isOpen, onClose, year, title, description }) => {
+const Modal = ({ isOpen, onClose, year, title, description, onShowTableau }) => {
   return (
     <Dialog open={isOpen} onClose={onClose} className="fixed inset-0 z-10 overflow-y-auto">
       <div className="min-h-screen px-4 text-center">
@@ -21,13 +21,11 @@ const Modal = ({ isOpen, onClose, year, title, description }) => {
             <p className="mt-2 text-sm text-gray-900">{description}</p>
           </div>
 
-          <div className="mt-4 flex justify-center" color="sky"> {/* Agregamos la clase "flex justify-center" */}
-            <Button >
-              Mas info
-            </Button>
+          <div className="mt-4 flex justify-center">
+            <Button onClick={onShowTableau}>Mostrar Mapa</Button>
             <Button className="ml-2" color="red" onClick={onClose}>
               Cerrar
-            </Button> {/* Agregamos un margen a la izquierda (ml-2) */}
+            </Button>
           </div>
         </div>
       </div>

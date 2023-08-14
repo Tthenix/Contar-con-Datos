@@ -1,45 +1,44 @@
 import React, { useState } from 'react';
 import './TimeLine.css';
-import Modal from './modal'; // Ajusta la ruta según tu estructura
+import Modal from './modal';
+import TableauEmbed from './mapaMDZ2017'; // Ajusta la ruta según tu estructura
 
 const LineaDeTiempo = () => {
-    const [modalOpen, setModalOpen] = useState(false);
-    const [selectedYear, setSelectedYear] = useState('');
-    const [selectedTitle, setSelectedTitle] = useState('');
-    const [selectedDescription, setSelectedDescription] = useState('');
+  const [modalOpen, setModalOpen] = useState(false);
+  const [showTableau, setShowTableau] = useState(false);
+  const [selectedYear, setSelectedYear] = useState('');
+  const [selectedTitle, setSelectedTitle] = useState('');
+  const [selectedDescription, setSelectedDescription] = useState('');
 
-    const handleIconClick = (year, title, description) => {
-        setSelectedYear(year);
-        setSelectedTitle(title);
-        setSelectedDescription(description);
-        setModalOpen(true);
-    };
+  const handleIconClick = (year, title, description) => {
+    setSelectedYear(year);
+    setSelectedTitle(title);
+    setSelectedDescription(description);
+    setModalOpen(true);
+  };
 
-    return (
-        <div className="container">
-            <div className="main-timeline">
-
-                <div className="timeline">
-                    <div className="icon">
-                        {/* Aquí puedes colocar el contenido de tu icono */}
-                        <i className="fas fa-calendar"></i>
-                    </div>
-                    <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('Daño de granizos a cultivos Mendocinos en el año 2017', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', )}>
-                    
-                        <div className="date-outer">
-                            <span className="date">
-                                <span className="month">Año</span>
-                                <span className="year">2017</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div className="timeline-content">
-                        <h5 className="title">GRANIZO - CAMPAÑA AGRICOLA 2017-2018</h5>
-                        <p className="description">
-                            La información manifestada en el mapa interactivo presentado, cita los datos extraídos de una fuente oficial y se encuentra medida en hectáreas. La tonalidad de los colores demuestra las distintas graduaciones del daño acontecido, según su gravedad.
-                        </p>
-                    </div>
-                </div>
+  return (
+    <div className="container">
+      <div className="main-timeline">
+        <div className="timeline">
+          <div className="icon">
+            <i className="fas fa-calendar"></i>
+          </div>
+          <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('Daño de granizos a cultivos Mendocinos en el año 2017', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA')}>
+            <div className="date-outer">
+              <span className="date">
+                <span className="month">Año</span>
+                <span className="year">2017</span>
+              </span>
+            </div>
+          </div>
+          <div className="timeline-content">
+            <h5 className="title">GRANIZO - CAMPAÑA AGRICOLA 2017-2018</h5>
+            <p className="description">
+              La información manifestada en el mapa interactivo presentado, cita los datos extraídos de una fuente oficial y se encuentra medida en hectáreas. La tonalidad de los colores demuestra las distintas graduaciones del daño acontecido, según su gravedad.
+            </p>
+          </div>
+        </div>
 
                 <div class="timeline">
                     <div class="icon"></div>
@@ -112,16 +111,22 @@ const LineaDeTiempo = () => {
                         </p>
                     </div>
                 </div>
-
-            </div>
-            <Modal
-                isOpen={modalOpen}
-                onClose={() => setModalOpen(false)}
-                year={selectedYear}
-                title={selectedTitle}
-                description={selectedDescription}
-            />
-        </div>
-    );
+        
+                </div>
+      <Modal
+        isOpen={modalOpen}
+        onClose={() => {
+          setModalOpen(false);
+          setShowTableau(false);
+        }}
+        year={selectedYear}
+        title={selectedTitle}
+        description={selectedDescription}
+        onShowTableau={() => setShowTableau(true)}
+      />
+      {showTableau && <TableauEmbed />}
+    </div>
+  );
 };
-export default LineaDeTiempo; 
+
+export default LineaDeTiempo;
