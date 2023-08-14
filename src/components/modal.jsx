@@ -1,8 +1,9 @@
 import React from 'react';
 import { Dialog } from '@headlessui/react';
 import { Button } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
-const Modal = ({ isOpen, onClose, year, title, description, onShowTableau }) => {
+const Modal = ({ isOpen, onClose, year, title, description }) => {
   return (
     <Dialog open={isOpen} onClose={onClose} className="fixed inset-0 z-10 overflow-y-auto">
       <div className="min-h-screen px-4 text-center">
@@ -22,7 +23,11 @@ const Modal = ({ isOpen, onClose, year, title, description, onShowTableau }) => 
           </div>
 
           <div className="mt-4 flex justify-center">
-            <Button onClick={onShowTableau}>Mostrar Mapa</Button>
+            <Link to="./datos2017.jsx">
+              <Button>
+                Mas info
+              </Button>
+            </Link>
             <Button className="ml-2" color="red" onClick={onClose}>
               Cerrar
             </Button>
