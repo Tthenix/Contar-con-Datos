@@ -1,6 +1,7 @@
 import React from 'react';
 import { Dialog } from '@headlessui/react';
 import { Button } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const Modal = ({ isOpen, onClose, year, title, description }) => {
   return (
@@ -22,9 +23,11 @@ const Modal = ({ isOpen, onClose, year, title, description }) => {
           </div>
 
           <div className="mt-4 flex justify-center" color="sky"> {/* Agregamos la clase "flex justify-center" */}
-            <Button >
-              Mas info
-            </Button>
+            <Link to="año2017">
+              <Button >
+                Mas info
+              </Button>
+            </Link>
             <Button className="ml-2" color="red" onClick={onClose}>
               Cerrar
             </Button> {/* Agregamos un margen a la izquierda (ml-2) */}
