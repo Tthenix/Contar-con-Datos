@@ -4,6 +4,17 @@ import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
 const Modal = ({ isOpen, onClose, year, title, description }) => {
+  // Genera la ruta dinámica basada en el año seleccionado
+  const dataRoutes = {
+    2017: 'datos2017',
+    2018: 'datos2018',
+    2019: 'datos2019',
+    2020: 'datos2020',
+    2021: 'datos2021'
+  };
+
+  const dataRoute = dataRoutes[year]; // Obtenemos la ruta correspondiente al año seleccionado
+
   return (
     <Dialog open={isOpen} onClose={onClose} className="fixed inset-0 z-10 overflow-y-auto">
       <div className="min-h-screen px-4 text-center">
@@ -23,7 +34,8 @@ const Modal = ({ isOpen, onClose, year, title, description }) => {
           </div>
 
           <div className="mt-4 flex justify-center">
-            <Link to="./datos2017.jsx">
+            {/* Use el enlace dinámico generado */}
+            <Link to={dataRoute}>
               <Button>
                 Mas info
               </Button>

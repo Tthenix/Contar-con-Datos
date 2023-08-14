@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import './TimeLine.css';
 import Modal from './modal';
-import TableauEmbed from './mapaMDZ2017'; // Ajusta la ruta según tu estructura
 
 const LineaDeTiempo = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [showTableau, setShowTableau] = useState(false);
   const [selectedYear, setSelectedYear] = useState('');
   const [selectedTitle, setSelectedTitle] = useState('');
   const [selectedDescription, setSelectedDescription] = useState('');
@@ -24,7 +22,7 @@ const LineaDeTiempo = () => {
           <div className="icon">
             <i className="fas fa-calendar"></i>
           </div>
-          <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('Daño de granizos a cultivos Mendocinos en el año 2017', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA')}>
+          <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('Daño de granizos a cultivos Mendocinos en el año 2017', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', '')}>
             <div className="date-outer">
               <span className="date">
                 <span className="month">Año</span>
@@ -40,7 +38,7 @@ const LineaDeTiempo = () => {
           </div>
         </div>
 
-                <div class="timeline">
+        <div class="timeline">
                     <div class="icon"></div>
                     <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('Daño de granizos a cultivos Mendocinos en el año 2018', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', '.')}>
                         <div class="date-outer">
@@ -56,9 +54,9 @@ const LineaDeTiempo = () => {
                         La información manifestada en el mapa interactivo presentado, cita los datos extraídos de una fuente oficial y se encuentra medida en hectáreas. La tonalidad de los colores demuestra las distintas graduaciones del daño acontecido, según su gravedad.
                         </p>
                     </div>
-                </div>
+        </div>
 
-                <div class="timeline">
+        <div class="timeline">
                     <div class="icon"></div>
                     <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('Daño de granizos a cultivos Mendocinos en el año 2019', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', '.')}>
                         <div class="date-outer">
@@ -74,9 +72,9 @@ const LineaDeTiempo = () => {
                         La información manifestada en el mapa interactivo presentado, cita los datos extraídos de una fuente oficial y se encuentra medida en hectáreas. La tonalidad de los colores demuestra las distintas graduaciones del daño acontecido, según su gravedad.
                         </p>
                     </div>
-                </div>
+        </div>
 
-                <div class="timeline">
+        <div class="timeline">
                     <div class="icon"></div>
                     <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('Daño de granizos a cultivos Mendocinos en el año 2020', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', '.')}>
                         <div class="date-outer">
@@ -92,9 +90,9 @@ const LineaDeTiempo = () => {
                         La información manifestada en el mapa interactivo presentado, cita los datos extraídos de una fuente oficial y se encuentra medida en hectáreas. La tonalidad de los colores demuestra las distintas graduaciones del daño acontecido, según su gravedad.
                         </p>
                     </div>
-                </div>
+        </div>
 
-                <div class="timeline">
+        <div class="timeline">
                     <div class="icon"></div>
                     <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('Daño de granizos a cultivos Mendocinos en el año 2021', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', '.')}>
                         <div class="date-outer">
@@ -110,21 +108,18 @@ const LineaDeTiempo = () => {
                         La información manifestada en el mapa interactivo presentado, cita los datos extraídos de una fuente oficial y se encuentra medida en hectáreas. La tonalidad de los colores demuestra las distintas graduaciones del daño acontecido, según su gravedad.
                         </p>
                     </div>
-                </div>
+        </div>
         
-                </div>
-      <Modal
+        </div>
+        <Modal
         isOpen={modalOpen}
         onClose={() => {
           setModalOpen(false);
-          setShowTableau(false);
         }}
         year={selectedYear}
         title={selectedTitle}
         description={selectedDescription}
-        onShowTableau={() => setShowTableau(true)}
       />
-      {showTableau && <TableauEmbed />}
     </div>
   );
 };
