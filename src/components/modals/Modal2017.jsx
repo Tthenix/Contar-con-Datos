@@ -23,7 +23,7 @@ const Modal2017 = ({ isOpen, onClose, year, title, description }) => {
           </div>
 
           <div className="mt-4 flex justify-center">
-            <Link to="datos2017">
+            <Link to="Datos2017">
               <Button>
                 Mas info
               </Button>

@@ -11,10 +11,7 @@ const VID2017 = () => {
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
 
-    return () => {
-      // Clean up the script element when component is unmounted
-      vizElement.parentNode.removeChild(scriptElement);
-    };
+
   }, []);
 
   return (
