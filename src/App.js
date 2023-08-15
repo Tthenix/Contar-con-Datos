@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
 import Home from "./components/home";
 import { NavBar } from "./components/navbar";
-import Datos2017 from "./components/añosPaginas/datos2017";
+import Datos2017 from "./components/añosPaginas/Datos2017";
 import Datos2018 from "./components/añosPaginas/Datos2018";
 import Datos2019 from "./components/añosPaginas/Datos2019";
 import Datos2020 from "./components/añosPaginas/Datos2020";

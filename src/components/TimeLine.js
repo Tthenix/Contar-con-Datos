@@ -15,8 +15,6 @@ const LineaDeTiempo = () => {
     setModalOpen(true);
   };
 
-
-
   return (
     <div className="container">
       <div className="main-timeline">
@@ -24,11 +22,11 @@ const LineaDeTiempo = () => {
           <div className="icon">
             <i className="fas fa-calendar"></i>
           </div>
-          <div className="date-content" onClick={() => handleIconClick('2017', 'Visual Art & Design', 'Descripción del año 2013')}>
+          <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('2017', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', 'Daño de granizos a cultivos Mendocinos en el año 2017')}>
             <div className="date-outer">
               <span className="date">
-                <span className="month">2017 y 2018</span>
-                <span className="year">Info </span>
+                <span className="month">Año</span>
+                <span className="year">2017</span>
               </span>
             </div>
           </div>
@@ -42,7 +40,7 @@ const LineaDeTiempo = () => {
 
         <div class="timeline">
           <div class="icon"></div>
-          <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('2018', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', 'Infooo del 2018 agrega lo que quieras xd')}>
+          <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('2018', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', 'Daño de granizos a cultivos Mendocinos en el año 2018')}>
             <div class="date-outer">
               <span class="date">
                 <span class="month">Año</span>
@@ -60,7 +58,7 @@ const LineaDeTiempo = () => {
 
         <div class="timeline">
           <div class="icon"></div>
-          <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('2019', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', 'Infooooo 2019')}>
+          <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('2019', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', 'Daño de granizos a cultivos Mendocinos en el año 2017')}>
             <div class="date-outer">
               <span class="date">
                 <span class="month">Año</span>
@@ -78,7 +76,7 @@ const LineaDeTiempo = () => {
 
         <div class="timeline">
           <div class="icon"></div>
-          <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('Daño de granizos a cultivos Mendocinos en el año 2020', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', '.')}>
+          <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('2020', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', 'Daño de granizos a cultivos Mendocinos en el año 2020')}>
             <div class="date-outer">
               <span class="date">
                 <span class="month">Año</span>
@@ -96,7 +94,7 @@ const LineaDeTiempo = () => {
 
         <div class="timeline">
           <div class="icon"></div>
-          <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('Daño de granizos a cultivos Mendocinos en el año 2021', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', '.')}>
+          <div className="date-content" style={{ cursor: 'pointer', transition: 'transform 0.2s' }} onClick={() => handleIconClick('2021', 'Tecnolog. Inform. y Telecomunic. Mendoza - DACC - SEA', 'Daño de granizos a cultivos Mendocinos en el año 2021')}>
             <div class="date-outer">
               <span class="date">
                 <span class="month">Año</span>
