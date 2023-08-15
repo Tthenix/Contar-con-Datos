@@ -5,8 +5,8 @@ const Datos2021 = () => {
     const divElement = document.getElementById('viz1692056718006');
     const vizElement = divElement.getElementsByTagName('object')[0];
     
-    vizElement.style.width = '100%';
-    vizElement.style.height = `${divElement.offsetWidth * 0.75}px`;
+    vizElement.style.width = '47%';
+    vizElement.style.height = `${divElement.offsetWidth * 0.40}px`;
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
@@ -15,7 +15,16 @@ const Datos2021 = () => {
   }, []);
 
   return (
-    <div className='tableauPlaceholder' id='viz1692056718006' style={{ position: 'relative' }}>
+    <div 
+    className='tableauPlaceholder' 
+    id='viz1692056718006' 
+    style={{ 
+      position: 'relative',
+      display: 'flex',
+      justifyContent: 'center', // Centrar horizontalmente
+      alignItems: 'center', // Centrar verticalmente
+      minHeight: 'calc(100vh - 20px)',
+     }}>
       <noscript>
         <a href='#'>
           <img alt='2021' src='https://public.tableau.com/static/images/Ma/MapaMZD2021-2022/2021/1_rss.png' style={{ border: 'none' }} />

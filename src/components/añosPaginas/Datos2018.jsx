@@ -2,23 +2,32 @@ import React, { useEffect } from 'react';
 
 const Datos2018 = () => {
   useEffect(() => {
-    const divElement = document.getElementById('viz1692056098080');
-    const vizElement = divElement.getElementsByTagName('object')[0];
-    
-    vizElement.style.width = '100%';
-    vizElement.style.height = `${divElement.offsetWidth * 0.75}px`;
+    const divElement = document.getElementById('viz1692063860523');
+    const vizElement = divElement.getElementsByClassName('tableauViz')[0];
+
+    vizElement.style.width = '47%';
+    vizElement.style.height = `${divElement.offsetWidth * 0.37}px`;
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-    
+
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
   }, []);
 
   return (
-    <div className='tableauPlaceholder' id='viz1692056098080' style={{ position: 'relative' }}>
+    <div 
+    className='tableauPlaceholder' 
+    id='viz1692063860523' 
+    style={{ 
+      position: 'relative',
+      display: 'flex',
+      justifyContent: 'center', // Centrar horizontalmente
+      alignItems: 'center', // Centrar verticalmente
+      minHeight: 'calc(100vh - 20px)',
+     }}>
       <noscript>
         <a href='#'>
-          <img alt='2018' src='https://public.tableau.com/static/images/Ma/MapaMZD2018-2019/2018/1_rss.png' style={{ border: 'none' }} />
+          <img alt='2018 ' src='https://public.tableau.com/static/images/Ma/MapaMZD2018-2019/2018/1_rss.png' style={{ border: 'none' }} />
         </a>
       </noscript>
       <object className='tableauViz' style={{ display: 'none' }}>
@@ -35,6 +44,7 @@ const Datos2018 = () => {
         <param name='display_overlay' value='yes' />
         <param name='display_count' value='yes' />
         <param name='language' value='es-ES' />
+        <param name='filter' value='publish=yes' />
       </object>
     </div>
   );
