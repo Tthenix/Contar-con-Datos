@@ -1,48 +1,43 @@
 import React, { useEffect } from 'react';
 
-const Frutales2017 = () => {
+const MapaPrincipal2020 = () => {
   useEffect(() => {
-    const divElement = document.getElementById('viz1692126684905');
+    const divElement = document.getElementById('viz1692056584191');
     const vizElement = divElement.getElementsByTagName('object')[0];
-    vizElement.style.width = '100%';
-    vizElement.style.height = `${divElement.offsetWidth * 0.75}px`;
+    
+    vizElement.style.width = '46%';
+    vizElement.style.height = `${divElement.offsetWidth * 0.40}px`;
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
-
-    return () => {
-      // Clean up the script element when component is unmounted
-      vizElement.parentNode.removeChild(scriptElement);
-    };
   }, []);
 
   return (
-    <div className='tableauPlaceholder' id='viz1692126684905' style={{ position: 'relative' }}>
+    <div 
+    className='tableauPlaceholder' 
+    id='viz1692056584191' 
+    style={{ 
+      position: 'relative',
+      display: 'flex',
+      justifyContent: 'center', // Centrar horizontalmente
+      alignItems: 'center', // Centrar verticalmente
+      minHeight: 'calc(100vh - 20px)',
+    }}>
       <noscript>
         <a href='#'>
-          <img
-            alt='Frutales'
-            src='https://public.tableau.com/static/images/Fr/Frutales2017/Frutales/1_rss.png'
-            style={{ border: 'none' }}
-          />
+          <img alt='2020' src='https://public.tableau.com/static/images/Ma/MapaMZD2020-2021/2020/1_rss.png' style={{ border: 'none' }} />
         </a>
       </noscript>
-      <object
-        className='tableauViz'
-        style={{ display: 'none' }}
-        data-testid='tableauViz'
-      >
+      <object className='tableauViz' style={{ display: 'none' }}>
         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
         <param name='embed_code_version' value='3' />
         <param name='site_root' value='' />
-        <param name='name' value='Frutales2017/Frutales' />
+        <param name='name' value='MapaMZD2020-2021/2020' />
         <param name='tabs' value='no' />
         <param name='toolbar' value='yes' />
-        <param
-          name='static_image'
-          value='https://public.tableau.com/static/images/Fr/Frutales2017/Frutales/1.png'
-        />
+        <param name='static_image' value='https://public.tableau.com/static/images/Ma/MapaMZD2020-2021/2020/1.png' />
         <param name='animate_transition' value='yes' />
         <param name='display_static_image' value='yes' />
         <param name='display_spinner' value='yes' />
@@ -54,4 +49,5 @@ const Frutales2017 = () => {
   );
 };
 
-export default Frutales2017;
+export default MapaPrincipal2020;
+

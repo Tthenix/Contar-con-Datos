@@ -1,53 +1,31 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import Frutales2020 from './Dato2020/Frutales2020.jsx';
+import Hortalizas2020 from './Dato2020/Hortalizas2020.jsx';
+import VID2020 from './Dato2020/VID2020.jsx';
+import MapaPrincipal2020 from './Dato2020/MapaPrincipal2020';
 
 const Datos2020 = () => {
-  useEffect(() => {
-    const divElement = document.getElementById('viz1692056584191');
-    const vizElement = divElement.getElementsByTagName('object')[0];
-    
-    vizElement.style.width = '46%';
-    vizElement.style.height = `${divElement.offsetWidth * 0.40}px`;
-
-    const scriptElement = document.createElement('script');
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-    
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-  }, []);
 
   return (
-    <div 
-    className='tableauPlaceholder' 
-    id='viz1692056584191' 
-    style={{ 
-      position: 'relative',
-      display: 'flex',
-      justifyContent: 'center', // Centrar horizontalmente
-      alignItems: 'center', // Centrar verticalmente
-      minHeight: 'calc(100vh - 20px)',
-    }}>
-      <noscript>
-        <a href='#'>
-          <img alt='2020' src='https://public.tableau.com/static/images/Ma/MapaMZD2020-2021/2020/1_rss.png' style={{ border: 'none' }} />
-        </a>
-      </noscript>
-      <object className='tableauViz' style={{ display: 'none' }}>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='MapaMZD2020-2021/2020' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image' value='https://public.tableau.com/static/images/Ma/MapaMZD2020-2021/2020/1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='es-ES' />
-      </object>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 h-screen">
+      {/* Mapa centrado verticalmente */}
+      <div className="col-span-full bg-gray-300 flex justify-center items-center">
+        <MapaPrincipal2020 />
+      </div>
+
+      <div className="col-span-1 bg-blue-300 p-4">
+        <Frutales2020 />
+      </div>
+      <div className="col-span-1 bg-green-300 p-4">
+        <Hortalizas2020 />
+      </div>
+      <div className="col-span-1 bg-red-300 p-4">
+        <VID2020 />
+      </div>
+
     </div>
+
   );
 };
 
 export default Datos2020;
-

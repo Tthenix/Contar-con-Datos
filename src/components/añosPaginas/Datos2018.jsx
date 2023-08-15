@@ -1,5 +1,7 @@
 import React from 'react';
-import Frutales2018 from './Dato2018/Frutales2018';
+import Frutales2018 from './Dato2018/Frutales2018.jsx';
+import Hortalizas2018 from './Dato2018/Hortalizas2018.jsx';
+import VID2018 from './Dato2018/VID2018.jsx';
 import MapaPrincipal2018 from './Dato2018/MapaPrincipal2018';
 
 const Datos2018 = () => {
@@ -15,10 +17,10 @@ const Datos2018 = () => {
         <Frutales2018 />
       </div>
       <div className="col-span-1 bg-green-300 p-4">
-        Elemento Pequeño 2
+        <Hortalizas2018 />
       </div>
       <div className="col-span-1 bg-red-300 p-4">
-        Elemento Pequeño 3
+        <VID2018/>
       </div>
 
     </div>
