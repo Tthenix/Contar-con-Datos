@@ -1,6 +1,8 @@
 import React from "react";
 import foto1 from "../img/granizodark.jpg"
 import LineaDeTiempo from "./TimeLine";
+import MapaPrincipal2018 from "./añosPaginas/Dato2018/MapaPrincipal2018";
+import TableauDashboard2017y2018 from "./TableauDashboard";
 
 const home = () => {
   return (
@@ -18,7 +20,7 @@ const home = () => {
       </div>
 
       <div className="text-center mt-4 mx-11">
-      <p className="text-lg text-white">Un mapa interactivo de Mendoza que detalla los daños sufridos en el sector agrícola desde el año 2017 hasta el 2021. Mediante esta herramienta, podrás explorar visualmente las áreas afectadas y conocer los tipos de cultivos perjudicados, obteniendo una visión completa de los desafíos a los que se enfrentó la agricultura en esa región. Este recurso ofrece una comprensión más profunda de los impactos climáticos y otros factores que contribuyeron a las pérdidas agrícolas.</p>
+        <p className="text-lg text-white">Un mapa interactivo de Mendoza que detalla los daños sufridos en el sector agrícola desde el año 2017 hasta el 2021. Mediante esta herramienta, podrás explorar visualmente las áreas afectadas y conocer los tipos de cultivos perjudicados, obteniendo una visión completa de los desafíos a los que se enfrentó la agricultura en esa región. Este recurso ofrece una comprensión más profunda de los impactos climáticos y otros factores que contribuyeron a las pérdidas agrícolas.</p>
       </div>
 
       <div className="flex justify-center items-center pt-4">
