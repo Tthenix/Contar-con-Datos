@@ -5,7 +5,7 @@ const Datos2018 = () => {
     const divElement = document.getElementById('viz1692063860523');
     const vizElement = divElement.getElementsByClassName('tableauViz')[0];
 
-    vizElement.style.width = '47%';
+    vizElement.style.width = '63%';
     vizElement.style.height = `${divElement.offsetWidth * 0.37}px`;
 
     const scriptElement = document.createElement('script');
