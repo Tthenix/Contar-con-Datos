@@ -5,27 +5,30 @@ import VID2019 from './Dato2019/VID2019.jsx';
 import MapaPrincipal2019 from './Dato2019/MapaPrincipal2019';
 
 const Datos2019 = () => {
-
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 h-screen">
-      {/* Mapa centrado verticalmente */}
-      <div className="col-span-full bg-gray-300 flex justify-center items-center">
+      <div className="col-span-1 bg-white-300 p-4">
+        <m />
+      </div>
+      <div className="col-span-1 bg-white-300 p-4">
         <MapaPrincipal2019 />
       </div>
+      <div className="col-span-1 bg-white-300 p-4">
+        <m />
+      </div>
 
-      <div className="col-span-1 bg-blue-300 p-4">
+      <div className="col-span-1 bg-white-300 p-4">
         <Frutales2019 />
       </div>
-      <div className="col-span-1 bg-green-300 p-4">
+      <div className="col-span-1 bg-white-300 p-4">
         <Hortalizas2019 />
       </div>
-      <div className="col-span-1 bg-red-300 p-4">
+      <div className="col-span-1 bg-white-300 p-4">
         <VID2019 />
       </div>
-
     </div>
-
   );
 };
 
 export default Datos2019;
+

@@ -5,8 +5,8 @@ const MapaPrincipal2017 = () => {
     const divElement = document.getElementById('viz1692062799122');
     const vizElement = divElement.getElementsByTagName('object')[0];
 
-    vizElement.style.width = '59%';
-    vizElement.style.height = `${divElement.offsetWidth * 0.43}px`;
+    vizElement.style.width = '100%';
+    vizElement.style.height = `${divElement.offsetWidth * 1.45}px`;
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
@@ -19,10 +19,9 @@ const MapaPrincipal2017 = () => {
       className='tableauPlaceholder'
       id='viz1692062799122'
       style={{
-        position: 'relative',
-        display: 'flex',
-        justifyContent: 'center', // Centrar horizontalmente
-        alignItems: 'center', // Centrar verticalmente
+        position: 'relative', // Cambiar a 'relative'
+        display: 'grid', // Cambiar a 'grid'
+        placeItems: 'center', // Centrar contenido en el grid
         minHeight: 'calc(100vh - 20px)', // Establecer una altura mínima para centrar en la pantalla
       }}
     >

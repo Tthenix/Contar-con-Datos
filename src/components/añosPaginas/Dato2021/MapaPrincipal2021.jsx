@@ -5,8 +5,8 @@ const MapaPrincipal2021 = () => {
     const divElement = document.getElementById('viz1692056718006');
     const vizElement = divElement.getElementsByTagName('object')[0];
     
-    vizElement.style.width = '47%';
-    vizElement.style.height = `${divElement.offsetWidth * 0.40}px`;
+    vizElement.style.width = '110%';
+    vizElement.style.height = `${divElement.offsetWidth * 1.40}px`;
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
