@@ -5,16 +5,13 @@ const Frutales2019 = () => {
     const divElement = document.getElementById('viz1692127788983');
     const vizElement = divElement.getElementsByTagName('object')[0];
     vizElement.style.width = '100%';
-    vizElement.style.height = `${divElement.offsetWidth * 0.75}px`;
+    vizElement.style.height = `${divElement.offsetWidth * 1.5}px`;
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
 
-    return () => {
-      // Clean up the script element when component is unmounted
-      vizElement.parentNode.removeChild(scriptElement);
-    };
+
   }, []);
 
   return (
