@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/github.io/Contar-con-Datos/build/static/css/main.f22216ff.css",
+    "main.js": "/github.io/Contar-con-Datos/build/static/js/main.9930223c.js",
+    "static/media/granizodark.jpg": "/github.io/Contar-con-Datos/build/static/media/granizodark.3af18c035ab109665e6b.jpg",
+    "index.html": "/github.io/Contar-con-Datos/build/index.html",
+    "main.f22216ff.css.map": "/github.io/Contar-con-Datos/build/static/css/main.f22216ff.css.map",
+    "main.9930223c.js.map": "/github.io/Contar-con-Datos/build/static/js/main.9930223c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f22216ff.css",
+    "static/js/main.9930223c.js"
+  ]
+}

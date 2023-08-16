@@ -45,7 +45,7 @@ export const NavBar = () => {
                     </Button>
                 </a>
 
-                <Link to="login">
+                <Link to="Nosotros">
                     <Button className="p-4" type="button" color="white">
                         Nosotros
                     </Button>

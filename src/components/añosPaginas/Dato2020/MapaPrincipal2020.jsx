@@ -26,7 +26,7 @@ const MapaPrincipal2020 = () => {
       minHeight: 'calc(100vh - 20px)',
     }}>
       <noscript>
-        <a href='#'>
+      <a>
           <img alt='2020' src='https://public.tableau.com/static/images/Ma/MapaMZD2020-2021/2020/1_rss.png' style={{ border: 'none' }} />
         </a>
       </noscript>

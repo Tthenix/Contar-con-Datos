@@ -17,7 +17,7 @@ const VID2018 = () => {
   return (
     <div className='tableauPlaceholder' id='viz1692127018944' style={{ position: 'relative' }}>
       <noscript>
-        <a href='#'>
+        <a>
           <img
             alt='VID'
             src='https://public.tableau.com/static/images/VI/VID2018/VID1/1_rss.png'

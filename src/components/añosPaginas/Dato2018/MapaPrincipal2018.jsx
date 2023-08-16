@@ -18,7 +18,7 @@ const MapaPrincipal2018 = () => {
   return (
     <div className='tableauPlaceholder' id='viz1692127108960' style={{ position: 'relative' }}>
       <noscript>
-        <a href='#'>
+        <a>
           <img
             alt='2018'
             src='https://public.tableau.com/static/images/Ma/MapaMZD2018-2019/2018/1_rss.png'

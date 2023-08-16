@@ -1,8 +1,6 @@
 import React from "react";
 import foto1 from "../img/granizodark.jpg"
 import LineaDeTiempo from "./TimeLine";
-import MapaPrincipal2018 from "./añosPaginas/Dato2018/MapaPrincipal2018";
-import TableauDashboard2017y2018 from "./TableauDashboard";
 
 const home = () => {
   return (

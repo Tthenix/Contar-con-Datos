@@ -26,7 +26,7 @@ const MapaPrincipal2017 = () => {
       }}
     >
       <noscript>
-        <a href='#'>
+        <a>
           <img alt='2017' src='https://public.tableau.com/static/images/Ma/MapaMZD2017-2019/2017/1_rss.png' style={{ border: 'none' }} />
         </a>
       </noscript>

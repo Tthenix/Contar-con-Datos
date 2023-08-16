@@ -17,7 +17,7 @@ const Hortalizas2018 = () => {
   return (
     <div className='tableauPlaceholder' id='viz1692126798988' style={{ position: 'relative' }}>
       <noscript>
-        <a href='#'>
+        <a>
           <img
             alt='Hortalizas'
             src='https://public.tableau.com/static/images/Ho/Hortalizas2018/Hortalizas1/1_rss.png'

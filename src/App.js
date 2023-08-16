@@ -7,6 +7,7 @@ import Datos2018 from "./components/añosPaginas/Datos2018";
 import Datos2019 from "./components/añosPaginas/Datos2019";
 import Datos2020 from "./components/añosPaginas/Datos2020";
 import Datos2021 from "./components/añosPaginas/Datos2021";
+import Nosotros from "./components/añosPaginas/Nosotros";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="Datos2019" element={<Datos2019 />} />
             <Route path="Datos2020" element={<Datos2020 />} />
             <Route path="Datos2021" element={<Datos2021 />} />
+            <Route path="Nosotros" element={<Nosotros />} />
           </Routes>
         </BrowserRouter>
       </div>

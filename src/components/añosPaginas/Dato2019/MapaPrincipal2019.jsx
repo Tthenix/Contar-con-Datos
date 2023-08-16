@@ -15,19 +15,19 @@ const MapaPrincipal2019 = () => {
   }, []);
 
   return (
-    <div 
-    className='tableauPlaceholder' 
-    id='viz1692064479063' 
-    style={{ 
-      position: 'relative',
-      display: 'flex',
-      justifyContent: 'center', // Centrar horizontalmente
-      alignItems: 'center', // Centrar verticalmente
-      minHeight: 'calc(100vh - 20px)',
-    }}>
+    <div
+      className='tableauPlaceholder'
+      id='viz1692064479063'
+      style={{
+        position: 'relative',
+        display: 'flex',
+        justifyContent: 'center', // Centrar horizontalmente
+        alignItems: 'center', // Centrar verticalmente
+        minHeight: 'calc(100vh - 20px)',
+      }}>
 
       <noscript>
-        <a href='#'>
+        <a>
           <img alt='2019 ' src='https://public.tableau.com/static/images/Ma/MapaMZD2019-2020/2019/1_rss.png' style={{ border: 'none' }} />
         </a>
       </noscript>
