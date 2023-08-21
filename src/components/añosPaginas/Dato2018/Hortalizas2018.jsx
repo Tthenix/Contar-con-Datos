@@ -4,8 +4,8 @@ const Hortalizas2018 = () => {
   useEffect(() => {
     const divElement = document.getElementById('viz1692126798988');
     const vizElement = divElement.getElementsByTagName('object')[0];
-    vizElement.style.width = '100%';
-    vizElement.style.height = `${divElement.offsetWidth * 1.5}px`;
+    vizElement.style.width = '25rem';
+    vizElement.style.height = '33rem';
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
@@ -15,7 +15,13 @@ const Hortalizas2018 = () => {
   }, []);
 
   return (
-    <div className='tableauPlaceholder' id='viz1692126798988' style={{ position: 'relative' }}>
+    <div className='tableauPlaceholder' id='viz1692126798988' style={{
+      position: 'relative',
+      display: 'flex',
+      justifyContent: 'center', // Centrar horizontalmente
+      alignItems: 'center', // Centrar verticalmente
+
+    }}>
       <noscript>
         <a>
           <img

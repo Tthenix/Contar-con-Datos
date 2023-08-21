@@ -5,8 +5,8 @@ const MapaPrincipal2019 = () => {
     const divElement = document.getElementById('viz1692064479063');
     const vizElement = divElement.getElementsByClassName('tableauViz')[0];
 
-    vizElement.style.width = '95%';
-    vizElement.style.height = `${divElement.offsetWidth * 1.50}px`;
+    vizElement.style.width = '25rem';
+    vizElement.style.height = '37rem';
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
@@ -23,7 +23,7 @@ const MapaPrincipal2019 = () => {
         display: 'flex',
         justifyContent: 'center', // Centrar horizontalmente
         alignItems: 'center', // Centrar verticalmente
-        minHeight: 'calc(100vh - 20px)',
+
       }}>
 
       <noscript>

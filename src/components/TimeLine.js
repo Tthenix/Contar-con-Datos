@@ -31,8 +31,8 @@ const LineaDeTiempo = () => {
             </div>
           </div>
           <div className="timeline-content">
-            <h5 className="title">GRANIZO - CAMPAÑA AGRICOLA 2017-2018</h5>
-            <p className="description">
+            <h5 className="title  text-white">GRANIZO - CAMPAÑA AGRICOLA 2017-2018</h5>
+            <p className="description  text-white">
               La información manifestada en el mapa interactivo presentado, cita los datos extraídos de una fuente oficial y se encuentra medida en hectáreas. La tonalidad de los colores demuestra las distintas graduaciones del daño acontecido, según su gravedad.
             </p>
           </div>
@@ -49,8 +49,8 @@ const LineaDeTiempo = () => {
             </div>
           </div>
           <div class="timeline-content">
-            <h5 class="title">GRANIZO - CAMPAÑA AGRICOLA 2018-2019</h5>
-            <p class="description">
+            <h5 class="title text-white">GRANIZO - CAMPAÑA AGRICOLA 2018-2019</h5>
+            <p class="description text-white">
               La información manifestada en el mapa interactivo presentado, cita los datos extraídos de una fuente oficial y se encuentra medida en hectáreas. La tonalidad de los colores demuestra las distintas graduaciones del daño acontecido, según su gravedad.
             </p>
           </div>
@@ -67,8 +67,8 @@ const LineaDeTiempo = () => {
             </div>
           </div>
           <div class="timeline-content">
-            <h5 class="title">GRANIZO - CAMPAÑA AGRICOLA 2019-2020</h5>
-            <p class="description">
+            <h5 class="title text-white">GRANIZO - CAMPAÑA AGRICOLA 2019-2020</h5>
+            <p class="description text-white">
               La información manifestada en el mapa interactivo presentado, cita los datos extraídos de una fuente oficial y se encuentra medida en hectáreas. La tonalidad de los colores demuestra las distintas graduaciones del daño acontecido, según su gravedad.
             </p>
           </div>
@@ -85,8 +85,8 @@ const LineaDeTiempo = () => {
             </div>
           </div>
           <div class="timeline-content">
-            <h5 class="title">GRANIZO - CAMPAÑA AGRICOLA 2020-2021</h5>
-            <p class="description">
+            <h5 class="title text-white">GRANIZO - CAMPAÑA AGRICOLA 2020-2021</h5>
+            <p class="description text-white">
               La información manifestada en el mapa interactivo presentado, cita los datos extraídos de una fuente oficial y se encuentra medida en hectáreas. La tonalidad de los colores demuestra las distintas graduaciones del daño acontecido, según su gravedad.
             </p>
           </div>
@@ -103,8 +103,8 @@ const LineaDeTiempo = () => {
             </div>
           </div>
           <div class="timeline-content">
-            <h5 class="title">GRANIZO - CAMPAÑA AGRICOLA 2021-2022</h5>
-            <p class="description">
+            <h5 class="title text-white">GRANIZO - CAMPAÑA AGRICOLA 2021-2022</h5>
+            <p class="description text-white">
               La información manifestada en el mapa interactivo presentado, cita los datos extraídos de una fuente oficial y se encuentra medida en hectáreas. La tonalidad de los colores demuestra las distintas graduaciones del daño acontecido, según su gravedad.
             </p>
           </div>

@@ -5,8 +5,8 @@ const MapaPrincipal2017 = () => {
     const divElement = document.getElementById('viz1692062799122');
     const vizElement = divElement.getElementsByTagName('object')[0];
 
-    vizElement.style.width = '100%';
-    vizElement.style.height = `${divElement.offsetWidth * 1.45}px`;
+    vizElement.style.width = '27rem';
+    vizElement.style.height = '35rem';
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
@@ -16,15 +16,15 @@ const MapaPrincipal2017 = () => {
 
   return (
     <div
-      className='tableauPlaceholder'
+      className='tableauPlaceholder '
       id='viz1692062799122'
       style={{
-        position: 'relative', // Cambiar a 'relative'
-        display: 'grid', // Cambiar a 'grid'
-        placeItems: 'center', // Centrar contenido en el grid
-        minHeight: 'calc(100vh - 20px)', // Establecer una altura mínima para centrar en la pantalla
-      }}
-    >
+        position: 'relative',
+        display: 'flex',
+        justifyContent: 'center', // Centrar horizontalmente
+        alignItems: 'center', // Centrar verticalmente
+
+      }}>
       <noscript>
         <a>
           <img alt='2017' src='https://public.tableau.com/static/images/Ma/MapaMZD2017-2019/2017/1_rss.png' style={{ border: 'none' }} />

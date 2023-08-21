@@ -5,8 +5,9 @@ const MapaPrincipal2018 = () => {
     const divElement = document.getElementById('viz1692127108960');
     const vizElement = divElement.getElementsByTagName('object')[0];
 
-    vizElement.style.width = '105%';
-    vizElement.style.height = `${divElement.offsetWidth * 1.41}px`;
+    vizElement.style.width = '27rem';
+    vizElement.style.height = '35rem';
+
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
@@ -16,7 +17,13 @@ const MapaPrincipal2018 = () => {
   }, []);
 
   return (
-    <div className='tableauPlaceholder' id='viz1692127108960' style={{ position: 'relative' }}>
+    <div className='tableauPlaceholder' id='viz1692127108960'       style={{
+      position: 'relative',
+      display: 'flex',
+      justifyContent: 'center', // Centrar horizontalmente
+      alignItems: 'center', // Centrar verticalmente
+
+    }}>
       <noscript>
         <a>
           <img

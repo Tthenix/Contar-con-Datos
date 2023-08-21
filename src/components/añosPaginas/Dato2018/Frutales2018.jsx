@@ -4,8 +4,8 @@ const Frutales2018 = () => {
   useEffect(() => {
     const divElement = document.getElementById('viz1692125987331');
     const vizElement = divElement.getElementsByTagName('object')[0];
-    vizElement.style.width = '100%';
-    vizElement.style.height = `${divElement.offsetWidth * 1.5}px`;
+    vizElement.style.width = '25rem';
+    vizElement.style.height = '33rem';
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';

@@ -5,8 +5,8 @@ const MapaPrincipal2020 = () => {
     const divElement = document.getElementById('viz1692056584191');
     const vizElement = divElement.getElementsByTagName('object')[0];
     
-    vizElement.style.width = '110%';
-    vizElement.style.height = `${divElement.offsetWidth * 1.41}px`;
+    vizElement.style.width = '27rem';
+    vizElement.style.height = '35rem';
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
@@ -18,12 +18,12 @@ const MapaPrincipal2020 = () => {
     <div 
     className='tableauPlaceholder' 
     id='viz1692056584191' 
-    style={{ 
+    style={{
       position: 'relative',
       display: 'flex',
       justifyContent: 'center', // Centrar horizontalmente
       alignItems: 'center', // Centrar verticalmente
-      minHeight: 'calc(100vh - 20px)',
+
     }}>
       <noscript>
       <a>
