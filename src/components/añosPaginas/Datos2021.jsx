@@ -25,6 +25,7 @@ const Datos2021 = () => {
                         <li>En cuanto a frutales, los departamentos más afectados fueron San Martin, Santa Rosa y San Rafael.</li>
                         <li>En hortalizas, los departamentos más afectados fueron Lavalle, San Martin y Tupungato.</li>
                         <li>A pesar de los daños, la superficie total afectada en la provincia fue de 14,524.7 hectáreas, lo que representa solo el 1.66% de la superficie total de cultivo.</li>
+                        <li>La pérdida de producción en vid y hortalizas de los departamentos de Lavalle y San Martín fue más del 80% del territorio cultivado aproximadamente.</li>
                         <li>En general, la campaña agrícola fue exitosa, ya que la superficie afectada por el granizo fue relativamente baja en comparación con la superficie total de cultivo en la provincia.</li>
                     </ul>
                 </div>
