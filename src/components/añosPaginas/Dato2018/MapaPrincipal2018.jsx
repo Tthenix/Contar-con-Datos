@@ -5,8 +5,8 @@ const MapaPrincipal2018 = () => {
     const divElement = document.getElementById('viz1692127108960');
     const vizElement = divElement.getElementsByTagName('object')[0];
 
-    vizElement.style.width = '27rem';
-    vizElement.style.height = '35rem';
+    vizElement.style.width = '26.5rem';
+    vizElement.style.height = '34rem';
 
 
     const scriptElement = document.createElement('script');

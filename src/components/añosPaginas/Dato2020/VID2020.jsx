@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 
 const VID2020 = () => {
   useEffect(() => {
-    const divElement = document.getElementById('viz1692128330967');
+    const divElement = document.getElementById('viz1693003244468');
     const vizElement = divElement.getElementsByTagName('object')[0];
-    vizElement.style.width = '27rem';
+    vizElement.style.width = '24.8rem';
     vizElement.style.height = '25rem';
 
     const scriptElement = document.createElement('script');
@@ -15,7 +15,7 @@ const VID2020 = () => {
   }, []);
 
   return (
-    <div className='tableauPlaceholder' id='viz1692128330967' style={{ position: 'relative' }}>
+    <div className='tableauPlaceholder' id='viz1693003244468' style={{ position: 'relative' }}>
       <noscript>
         <a>
           <img

@@ -25,6 +25,7 @@ const Datos2019 = () => {
             <li>En hortalizas, los departamentos más afectados fueron Lavalle, General Alvear y Tupungato.</li>
             <li>A pesar de los daños, la superficie total afectada en la provincia fue de 15,553.4 hectáreas, lo que representa solo el 1.78% de la superficie total de cultivo.</li>
             <li>En general, la campaña agrícola fue exitosa, ya que la superficie afectada por el granizo fue relativamente baja en comparación con la superficie total de cultivo en la provincia.</li>
+            <li>La pérdida de producción en frutales en el departamento de General Alvear fue más del 85% del territorio cultivado y en San Rafael del 60% aproximadamente.</li>
           </ul>
         </div>
       </div>

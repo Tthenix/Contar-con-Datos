@@ -5,8 +5,8 @@ const MapaPrincipal2017 = () => {
     const divElement = document.getElementById('viz1692062799122');
     const vizElement = divElement.getElementsByTagName('object')[0];
 
-    vizElement.style.width = '27rem';
-    vizElement.style.height = '35rem';
+    vizElement.style.width = '28rem';
+    vizElement.style.height = '34.1rem';
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';

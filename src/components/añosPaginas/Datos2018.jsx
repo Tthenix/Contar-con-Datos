@@ -24,7 +24,8 @@ const Datos2018 = () => {
             <li>En cuanto a frutales, los departamentos más afectados fueron San Rafael, General Alvear y Rivadavia.</li>
             <li>En hortalizas, los departamentos más afectados fueron Lavalle, Maipu y San Martin.</li>
             <li>A pesar de los daños, la superficie total afectada en la provincia fue de 27,888.5 hectáreas, lo que representa solo el 3.2% de la superficie total de cultivo.</li>
-            <li>En general, la campaña agrícola fue exitosa, ya que la superficie afectada por el granizo fue relativamente baja en comparación con la superficie total de cultivo en la provincia.</li>
+            <li>La pérdida de producción tanto en vid y frutales en el departamento de San Rafael fue más del 80% en vid y 60% en frutales del territorio cultivado. Además mostró una pérdida del 80% también General Alvear con respecto a los frutales.</li>
+            <li>La pérdida de producción tanto en hortalizas en el departamento de Lavalle fue más del 80% del territorio cultivado.</li>
           </ul>
         </div>
       </div>

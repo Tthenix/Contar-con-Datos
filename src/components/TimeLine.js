@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './TimeLine.css';
-import Modal from './modals/Modal';
+import Modal from './Modals/Modal';
 
 const LineaDeTiempo = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -13,7 +13,7 @@ const LineaDeTiempo = () => {
     setSelectedTitle(title);
     setSelectedDescription(description);
     setModalOpen(true);
-  };
+  }
 
   return (
     <div className="container">

@@ -6,7 +6,7 @@ const MapaPrincipal2020 = () => {
     const vizElement = divElement.getElementsByTagName('object')[0];
     
     vizElement.style.width = '27rem';
-    vizElement.style.height = '35rem';
+    vizElement.style.height = '34.1rem';
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';

@@ -25,6 +25,7 @@ const Datos2017 = () => {
             <li>En hortalizas, los departamentos más afectados fueron San Rafael, General Alvear y Maipú.</li>
             <li>A pesar de los daños, la superficie total afectada en la provincia fue de 9,624.69 hectáreas, lo que representa solo el 1.3% de la superficie total de cultivo.</li>
             <li>En general, la campaña agrícola fue exitosa, ya que la superficie afectada por el granizo fue relativamente baja en comparación con la superficie total de cultivo en la provincia.</li>
+            <li>La pérdida de producción tanto en vid y frutales en el departamento de San Rafael fue más del 50% del territorio cultivado.</li>
           </ul>
         </div>
       </div>

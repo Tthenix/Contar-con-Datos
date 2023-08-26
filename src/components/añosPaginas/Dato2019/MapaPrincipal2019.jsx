@@ -5,8 +5,8 @@ const MapaPrincipal2019 = () => {
     const divElement = document.getElementById('viz1692064479063');
     const vizElement = divElement.getElementsByClassName('tableauViz')[0];
 
-    vizElement.style.width = '25rem';
-    vizElement.style.height = '37rem';
+    vizElement.style.width = '22rem';
+    vizElement.style.height = '36.2rem';
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';

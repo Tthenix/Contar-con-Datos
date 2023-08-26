@@ -5,7 +5,7 @@ const VID2018 = () => {
     const divElement = document.getElementById('viz1692127018944');
     const vizElement = divElement.getElementsByTagName('object')[0];
     vizElement.style.width = '25rem';
-    vizElement.style.height = '33rem';
+    vizElement.style.height = '25rem';
 
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';

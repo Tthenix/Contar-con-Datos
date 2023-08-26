@@ -4,7 +4,7 @@ const Frutales2017 = () => {
   useEffect(() => {
     const divElement = document.getElementById('viz1692126684905');
     const vizElement = divElement.getElementsByTagName('object')[0];
-    vizElement.style.width = '27rem';
+    vizElement.style.width = '24.6rem';
     vizElement.style.height = '25rem';
 
     const scriptElement = document.createElement('script');

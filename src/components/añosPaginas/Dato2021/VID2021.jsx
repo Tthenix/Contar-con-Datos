@@ -4,7 +4,7 @@ const VID2021 = () => {
   useEffect(() => {
     const divElement = document.getElementById('viz1692128784193');
     const vizElement = divElement.getElementsByTagName('object')[0];
-    vizElement.style.width = '27rem';
+    vizElement.style.width = '25rem';
     vizElement.style.height = '25rem';
 
     const scriptElement = document.createElement('script');
