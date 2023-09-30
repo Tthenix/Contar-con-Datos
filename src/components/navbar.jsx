@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import logo from "../img/contarcondatos.png"
+import logo from "../img/logo.png"
 import {
     Menu,
     MenuHandler,
@@ -39,15 +39,11 @@ export const NavBar = () => {
             </div>
 
             <div className="hidden md:flex items-center pr-12 space-x-4">
-                <a href="http://www.contingencias.mendoza.gov.ar/web1/estadisticas.php#" target="_blank" rel="noopener noreferrer">
-                    <Button className="p-4" type="button" color="white">
-                        Fuentes
-                    </Button>
-                </a>
 
-                <Link to="Nosotros">
+
+                <Link to="/">
                     <Button className="p-4" type="button" color="white">
-                        Nosotros
+                        Menú
                     </Button>
                 </Link>
             </div>

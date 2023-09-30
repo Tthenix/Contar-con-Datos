@@ -1,0 +1,22 @@
+.titulo {
+    display: inline-block;
+    font-size: 50px;
+  }
+  
+  .subtitulo {
+    background-color: white;
+    color: #ce9b3a;
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    margin-left: 15px;
+  }
+  .absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
